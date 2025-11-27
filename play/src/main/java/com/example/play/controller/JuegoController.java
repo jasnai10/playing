@@ -4,7 +4,6 @@ import com.example.play.entity.Juego;
 import com.example.play.repository.JuegoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController

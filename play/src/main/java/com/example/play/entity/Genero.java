@@ -1,11 +1,8 @@
 package com.example.play.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 
 @Entity
-@Getter
-@Setter
 @Table(name = "generos")
 public class Genero {
     @Id
@@ -13,6 +10,33 @@ public class Genero {
     @Column(name = "idgenero", nullable = false)
     private Integer id;
 
+    @Column(name = "nombre", length = 50)
+    private String nombre;
+
     @Column(name = "descripcion", length = 200)
     private String descripcion;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }
